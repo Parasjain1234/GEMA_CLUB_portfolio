@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Aarav Sharma</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --primary-color: #3b30e0;
+      --accent-color: #059669;
+      --text-dark: #1e293b;
+      --text-gray: #475569;
+      --border-color: #e2e8f0;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.5;
+      background-color: #f1f5f9;
+      padding: 2rem 1rem;
+    }
+
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Print action bar */
+    .print-actions {
+      max-width: 800px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-back {
+      color: var(--text-gray);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-back:hover {
+      color: var(--primary-color);
+    }
+
+    .btn-print {
+      background: var(--primary-color);
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.25rem;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: 600;
+      font-family: 'Outfit', sans-serif;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 10px rgba(59, 48, 224, 0.2);
+    }
+
+    .btn-print:hover {
+      background: #2e24bf;
+    }
+
+    /* Header styling */
+    header {
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .title-area h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--primary-color);
+      line-height: 1.1;
+    }
+
+    .title-area p {
+      font-size: 1.1rem;
+      color: var(--text-gray);
+      font-weight: 600;
+      margin-top: 0.25rem;
+    }
+
+    .contact-details {
+      text-align: right;
+      font-size: 0.9rem;
+      color: var(--text-gray);
+    }
+
+    .contact-details div {
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.5rem;
+    }
+
+    .contact-details i {
+      color: var(--primary-color);
+      width: 14px;
+    }
+
+    .career-objective {
+      margin-bottom: 2rem;
+      background-color: var(--bg-light);
+      padding: 1.25rem 1.5rem;
+      border-left: 4px solid var(--accent-color);
+      border-radius: 4px;
+    }
+
+    .career-objective h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      color: var(--accent-color);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.4rem;
+    }
+
+    .career-objective p {
+      color: var(--text-gray);
+      font-size: 0.95rem;
+    }
+
+    /* Core layout two-column */
+    .resume-body {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Experience/Academic Item */
+    .timeline-item {
+      margin-bottom: 1.25rem;
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .timeline-subheader {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--text-gray);
+      margin-bottom: 0.4rem;
+    }
+
+    .timeline-desc {
+      font-size: 0.9rem;
+      color: var(--text-gray);
+      padding-left: 1rem;
+    }
+
+    .timeline-desc li {
+      margin-bottom: 0.25rem;
+    }
+
+    /* Skill matrix */
+    .skills-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .skills-group h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text-gray);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .skill-pill {
+      font-size: 0.8rem;
+      background: var(--bg-light);
+      border: 1px solid var(--border-color);
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    /* Academic Grades Table */
+    .grades-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .grades-table th {
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.4rem;
+      color: var(--text-gray);
+    }
+
+    .grades-table td {
+      padding: 0.4rem;
+      border-bottom: 1px solid var(--bg-light);
+    }
+
+    .grades-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .grade-badge {
+      font-weight: 700;
+      color: var(--primary-color);
+    }
+
+    /* Print styles overrides */
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+
+      .resume-container {
+        box-shadow: none;
+        padding: 0;
+      }
+
+      .print-actions {
+        display: none;
+      }
+
+      header {
+        margin-top: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Bar -->
+  <div class="print-actions">
+    <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Back to Website</a>
+    <button onclick="window.print()" class="btn-print"><i class="fa-solid fa-print"></i> Print / Save as PDF</button>
+  </div>
+
+  <!-- Main Resume Content Area -->
+  <div class="resume-container">
+    
+    <!-- Header -->
+    <header>
+      <div class="title-area">
+        <h1>Aarav Sharma</h1>
+        <p>GEMA Club Ambassador | Grade 8 Student</p>
+      </div>
+      <div class="contact-details">
+        <div><i class="fa-solid fa-school"></i> Sunrise International School</div>
+        <div><i class="fa-solid fa-envelope"></i> aarav.sharma@example.com</div>
+        <div><i class="fa-solid fa-location-dot"></i> New Delhi, India</div>
+        <div><i class="fa-solid fa-globe"></i> aaravsharma.portfolio (dummy)</div>
+      </div>
+    </header>
+
+    <!-- Objective -->
+    <div class="career-objective">
+      <h3>Career Aspiration: Aerospace Engineer</h3>
+      <p>Passionate Grade 8 student with strong academic performance in mathematics, physics, and computer science. Applying logic, calculation visualization, and speaking capabilities trained through GEMMA Clubs to design sustainable technology prototypes and prepare for future studies in aerospace design.</p>
+    </div>
+
+    <!-- Resume Grid Layout -->
+    <div class="resume-body">
+      
+      <!-- Left Column (Education, Projects, Achievements) -->
+      <div class="left-col">
+        
+        <!-- Education -->
+        <section>
+          <div class="section-title">Education</div>
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span>Sunrise International School</span>
+              <span>2018 - Present</span>
+            </div>
+            <div class="timeline-subheader">
+              <span>Grade 8 (Middle School)</span>
+              <span>New Delhi, India</span>
+            </div>
+            <ul class="timeline-desc">
+              <li>Academic percentage of <strong>92%</strong> for the Grade 8 academic year.</li>
+              <li>Scored A+ in Mathematics (98/100) and Computer Science (99/100).</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Projects Showcase -->
+        <section>
+          <div class="section-title">STEM Projects</div>
+          
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span>Smart Irrigation System</span>
+              <span>Science Project</span>
+            </div>
+            <ul class="timeline-desc">
+              <li>Built an IoT-based automated plant irrigation system using soil moisture sensors.</li>
+              <li>Optimized water conservation by limiting flow based on soil humidity thresholds.</li>
+              <li>Awarded the <strong>School Innovation Award</strong> & placed Top 20 in the Young Scientist challenge.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span>Scratch Game: Temple Adventure</span>
+              <span>Coding Project</span>
+            </div>
+            <ul class="timeline-desc">
+              <li>Designed and programmed a full 2D platforms adventure game in Scratch 3.0.</li>
+              <li>Created 5 custom levels, collision mechanics, health/scoring meters, and local score saving.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span>Climate Change Awareness Website</span>
+              <span>Web Development</span>
+            </div>
+            <ul class="timeline-desc">
+              <li>Coded an informational web layout using semantic HTML5 and vanilla CSS.</li>
+              <li>Fitted with dynamic tables, carbon calculator interfaces, and clean responsive views.</li>
+            </ul>
+          </div>
+        </section>
+        
+        <!-- Achievements -->
+        <section>
+          <div class="section-title">Competition Achievements</div>
+          
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span>International Abacus Olympiad</span>
+              <span>Gold Medal | 2025</span>
+            </div>
+            <p class="timeline-desc">Finished 1st globally in the speed mental calculation category using soroban visualization.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span>International Essay Writing Competition</span>
+              <span>Silver Medal | 2025</span>
+            </div>
+            <p class="timeline-desc">Awarded Silver Medal for an essay on technology-driven solutions for global warming.</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <span>International Student Speaker Competition</span>
+              <span>Bronze Medal | 2024</span>
+            </div>
+            <p class="timeline-desc">Placed 3rd internationally with a speech advocating for middle-school coding curricula.</p>
+          </div>
+        </section>
+
+      </div>
+      
+      <!-- Right Column (Academic Grades, Clubs, Skills, Hobbies) -->
+      <div class="right-col">
+        
+        <!-- Academic Scores -->
+        <section>
+          <div class="section-title">Academic Scores</div>
+          <table class="grades-table">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mathematics</td>
+                <td class="grade-badge">A+ (98%)</td>
+              </tr>
+              <tr>
+                <td>Science</td>
+                <td class="grade-badge">A (93%)</td>
+              </tr>
+              <tr>
+                <td>Computer Science</td>
+                <td class="grade-badge">A+ (99%)</td>
+              </tr>
+              <tr>
+                <td>English</td>
+                <td class="grade-badge">A (91%)</td>
+              </tr>
+              <tr>
+                <td>Social Studies</td>
+                <td class="grade-badge">B+ (87%)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size: 0.8rem; color: var(--text-gray); text-align: center; font-weight: 600; background: var(--bg-light); padding: 0.3rem; border-radius: 4px;">
+            Overall Score: 92% (Distinction)
+          </p>
+        </section>
+
+        <!-- GEMMA Club Involvements -->
+        <section>
+          <div class="section-title">GEMMA Club Involvements</div>
+          
+          <div class="timeline-item" style="margin-bottom: 0.75rem;">
+            <div class="timeline-header" style="font-size: 0.85rem;">
+              <span>Abacus Club</span>
+              <span>2 Yrs</span>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-gray);">Visualization speed arithmetic (State-Level Finalist)</p>
+          </div>
+
+          <div class="timeline-item" style="margin-bottom: 0.75rem;">
+            <div class="timeline-header" style="font-size: 0.85rem;">
+              <span>Coding Club</span>
+              <span>3 Yrs</span>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-gray);">Built 5 Scratch projects and web design models</p>
+          </div>
+
+          <div class="timeline-item" style="margin-bottom: 0.75rem;">
+            <div class="timeline-header" style="font-size: 0.85rem;">
+              <span>Public Speaking Club</span>
+              <span>1 Yr</span>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-gray);">Voice coaching, formal debating and persuasive speeches</p>
+          </div>
+
+          <div class="timeline-item" style="margin-bottom: 0.75rem;">
+            <div class="timeline-header" style="font-size: 0.85rem;">
+              <span>Science Club</span>
+              <span>2 Yrs</span>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-gray);">Conducted physics prototyping and green energy tests</p>
+          </div>
+        </section>
+
+        <!-- Skills Matrix -->
+        <section>
+          <div class="section-title">Skills Matrix</div>
+          
+          <div class="skills-group">
+            <h4>Academic</h4>
+            <div class="skill-pills">
+              <span class="skill-pill">Mental Math</span>
+              <span class="skill-pill">Logical Reasoning</span>
+              <span class="skill-pill">Problem Solving</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4>Technical</h4>
+            <div class="skill-pills">
+              <span class="skill-pill">Scratch</span>
+              <span class="skill-pill">HTML & CSS</span>
+              <span class="skill-pill">Canva</span>
+              <span class="skill-pill">PowerPoint</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h4>Soft Skills</h4>
+            <div class="skill-pills">
+              <span class="skill-pill">Leadership</span>
+              <span class="skill-pill">Teamwork</span>
+              <span class="skill-pill">Public Speaking</span>
+              <span class="skill-pill">Creativity</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Hobbies & Interests -->
+        <section>
+          <div class="section-title">Interests</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Robotics</span>
+            <span class="skill-pill">Chess</span>
+            <span class="skill-pill">Aeromodelling</span>
+            <span class="skill-pill">Visual Arts</span>
+          </div>
+        </section>
+
+      </div>
+      
+    </div>
+
+  </div>
+
+</body>
+</html>

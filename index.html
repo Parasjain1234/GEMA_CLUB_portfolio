@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarav Sharma | GEMA Club Student Portfolio</title>
+  <meta name="description" content="Explore the portfolio of Aarav Sharma, a Grade 8 student at Sunrise International School. Showcase of academic results, GEMMA clubs, code projects, and Olympiad achievements.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Custom Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="#" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        <span class="logo-text">Aarav <span class="logo-accent">Sharma</span></span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#academic" class="nav-link">Academic</a>
+        <a href="#clubs" class="nav-link">GEMA Clubs</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#blog" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link btn-contact-nav">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="menu-toggle" class="menu-toggle-btn" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-container">
+          <span class="badge"><i class="fa-solid fa-star text-accent"></i> GEMA Clubs Ambassador</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I am <span class="text-gradient">Aarav Sharma</span>
+        </h1>
+        <p class="hero-subtitle">Grade 8 | Sunrise International School</p>
+        <p class="hero-description">
+          "I am passionate about mathematics, coding, public speaking, and scientific innovation. Through GEMMA Clubs, I continuously develop my skills and participate in national and international competitions."
+        </p>
+        
+        <!-- Video Intro Preview / Simulated player -->
+        <div class="video-intro-preview" id="video-preview-btn">
+          <div class="video-thumbnail">
+            <div class="video-overlay">
+              <span class="play-btn"><i class="fa-solid fa-play"></i></span>
+              <span class="play-text">Watch 1-Min Video Introduction</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="resume.html" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-download"></i> View Resume</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="image-wrapper">
+          <img src="assets/profile.png" alt="Aarav Sharma Portrait" class="profile-img">
+          <!-- Floating decorative cards -->
+          <div class="floating-card card-1">
+            <span class="icon"><i class="fa-solid fa-trophy"></i></span>
+            <div class="info">
+              <span class="title">Gold Medal</span>
+              <span class="desc">Abacus Olympiad</span>
+            </div>
+          </div>
+          <div class="floating-card card-2">
+            <span class="icon"><i class="fa-solid fa-code"></i></span>
+            <div class="info">
+              <span class="title">Built 5+</span>
+              <span class="desc">Scratch & Web Projects</span>
+            </div>
+          </div>
+          <div class="circle-decorator bg-gradient"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Quick Statistics Section -->
+    <div class="stats-bar-wrapper">
+      <div class="container stats-bar" id="stats-container">
+        <div class="stat-item">
+          <div class="stat-num" data-target="92">%</div>
+          <div class="stat-label">Overall Academic Score</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="5">+</div>
+          <div class="stat-label">GEMA Clubs Joined</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="5">+</div>
+          <div class="stat-label">Olympiad Medals</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num" data-target="10">+</div>
+          <div class="stat-label">Project Prototypes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding section-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">My Journey & Aspirations</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="about-grid">
+        <!-- Student Details Table Card -->
+        <div class="about-card table-card">
+          <h3>Student Profile</h3>
+          <div class="profile-details-table">
+            <div class="table-row">
+              <div class="table-label"><i class="fa-solid fa-user"></i> Full Name</div>
+              <div class="table-value">Aarav Sharma</div>
+            </div>
+            <div class="table-row">
+              <div class="table-label"><i class="fa-solid fa-calendar"></i> Date of Birth</div>
+              <div class="table-value">October 14, 2012</div>
+            </div>
+            <div class="table-row">
+              <div class="table-label"><i class="fa-solid fa-graduation-cap"></i> Grade / Class</div>
+              <div class="table-value">Grade 8 (Class 8-A)</div>
+            </div>
+            <div class="table-row">
+              <div class="table-label"><i class="fa-solid fa-school"></i> School</div>
+              <div class="table-value">Sunrise International School</div>
+            </div>
+            <div class="table-row">
+              <div class="table-label"><i class="fa-solid fa-location-dot"></i> City/Country</div>
+              <div class="table-value">New Delhi, India</div>
+            </div>
+            <div class="table-row">
+              <div class="table-label"><i class="fa-solid fa-rocket"></i> Career Goal</div>
+              <div class="table-value text-accent font-bold">Aerospace Engineer</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hobbies & Interests Card -->
+        <div class="about-card interests-card">
+          <h3>Hobbies & Interests</h3>
+          <p class="interests-desc">
+            Beyond academics, I enjoy participating in activities that challenge my logical thinking and creativity.
+          </p>
+          <div class="interests-grid">
+            <div class="interest-pill">
+              <span class="interest-icon"><i class="fa-solid fa-calculator"></i></span>
+              <span class="interest-name">Mathematics</span>
+            </div>
+            <div class="interest-pill">
+              <span class="interest-icon"><i class="fa-solid fa-laptop-code"></i></span>
+              <span class="interest-name">Coding</span>
+            </div>
+            <div class="interest-pill">
+              <span class="interest-icon"><i class="fa-solid fa-robot"></i></span>
+              <span class="interest-name">Robotics</span>
+            </div>
+            <div class="interest-pill">
+              <span class="interest-icon"><i class="fa-solid fa-microphone"></i></span>
+              <span class="interest-name">Public Speaking</span>
+            </div>
+            <div class="interest-pill">
+              <span class="interest-icon"><i class="fa-solid fa-chess"></i></span>
+              <span class="interest-name">Chess</span>
+            </div>
+            <div class="interest-pill">
+              <span class="interest-icon"><i class="fa-solid fa-plane"></i></span>
+              <span class="interest-name">Aero-modeling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Performance Section -->
+  <section id="academic" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academics</span>
+        <h2 class="section-title">Academic Excellence</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="academic-grid">
+        <!-- Subject Grades Table -->
+        <div class="academic-table-wrapper">
+          <table class="academic-table">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Grade</th>
+                <th>Performance Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font-semibold">Mathematics</td>
+                <td><span class="grade-badge grade-aplus">A+</span></td>
+                <td>Outstanding (98/100)</td>
+              </tr>
+              <tr>
+                <td class="font-semibold">Science</td>
+                <td><span class="grade-badge grade-a">A</span></td>
+                <td>Excellent (93/100)</td>
+              </tr>
+              <tr>
+                <td class="font-semibold">English</td>
+                <td><span class="grade-badge grade-a">A</span></td>
+                <td>Excellent (91/100)</td>
+              </tr>
+              <tr>
+                <td class="font-semibold">Computer Science</td>
+                <td><span class="grade-badge grade-aplus">A+</span></td>
+                <td>Outstanding (99/100)</td>
+              </tr>
+              <tr>
+                <td class="font-semibold">Social Studies</td>
+                <td><span class="grade-badge grade-bplus">B+</span></td>
+                <td>Very Good (87/100)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <!-- Gauge/Visual Display of Overall Percentage -->
+        <div class="overall-score-card">
+          <div class="gauge-container">
+            <svg class="gauge-svg" viewBox="0 0 100 100">
+              <circle class="gauge-bg" cx="50" cy="50" r="40"></circle>
+              <circle class="gauge-fill" cx="50" cy="50" r="40" style="stroke-dasharray: 251.2; stroke-dashoffset: 251.2;" id="academic-gauge"></circle>
+            </svg>
+            <div class="gauge-text">
+              <span class="gauge-percent" id="gauge-percent-num">92</span>
+              <span class="gauge-unit">%</span>
+            </div>
+          </div>
+          <div class="overall-info">
+            <h3>Overall Percentage</h3>
+            <p>Grade 8 Academic Year</p>
+            <span class="distinction-badge"><i class="fa-solid fa-medal"></i> Passed with Distinction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEMMA Club Participation -->
+  <section id="clubs" class="section-padding section-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Co-Curricular</span>
+        <h2 class="section-title">GEMMA Club Involvement</h2>
+        <div class="title-underline"></div>
+        <p class="section-description">
+          GEMMA Clubs have provided me with structured pathways to develop logical, computational, and oratorical skillsets. Here is my involvement:
+        </p>
+      </div>
+      
+      <div class="clubs-grid">
+        <!-- Abacus Club -->
+        <div class="club-card">
+          <div class="club-icon-header abacus-icon">
+            <i class="fa-solid fa-keyboard"></i>
+          </div>
+          <div class="club-body">
+            <h3 class="club-title">Abacus Club</h3>
+            <span class="duration-badge"><i class="fa-regular fa-clock"></i> 2 Years Active</span>
+            <ul class="club-bullets">
+              <li>Mastered advanced mental math arithmetic and visualization techniques.</li>
+              <li>Represented school and finished as a State-Level Finalist.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Coding Club -->
+        <div class="club-card">
+          <div class="club-icon-header coding-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="club-body">
+            <h3 class="club-title">Coding Club</h3>
+            <span class="duration-badge"><i class="fa-regular fa-clock"></i> 3 Years Active</span>
+            <ul class="club-bullets">
+              <li>Built 5 Scratch project games and interactive stories.</li>
+              <li>Participated in coding challenges, learning basic HTML and logic gates.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Mathematics Club -->
+        <div class="club-card">
+          <div class="club-icon-header math-icon">
+            <i class="fa-solid fa-calculator"></i>
+          </div>
+          <div class="club-body">
+            <h3 class="club-title">Mathematics Club</h3>
+            <span class="duration-badge"><i class="fa-regular fa-clock"></i> 1 Year Active</span>
+            <ul class="club-bullets">
+              <li>Explored school math olympiad problems and logical riddles.</li>
+              <li>Organized the school's annual Math Day quiz competition.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Public Speaking Club -->
+        <div class="club-card">
+          <div class="club-icon-header public-icon">
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+          <div class="club-body">
+            <h3 class="club-title">Public Speaking Club</h3>
+            <span class="duration-badge"><i class="fa-regular fa-clock"></i> 1 Year Active</span>
+            <ul class="club-bullets">
+              <li>Developed speech structures, voice modulation, and stage presence.</li>
+              <li>Competed in regional and international debating matches.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Science Club -->
+        <div class="club-card">
+          <div class="club-icon-header science-icon">
+            <i class="fa-solid fa-flask"></i>
+          </div>
+          <div class="club-body">
+            <h3 class="club-title">Science Club</h3>
+            <span class="duration-badge"><i class="fa-regular fa-clock"></i> 2 Years Active</span>
+            <ul class="club-bullets">
+              <li>Conducted practical chemistry, physics and biology model building.</li>
+              <li>Investigated green energy and developed the school smart irrigation model.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competition Achievements (Timeline) -->
+  <section id="achievements" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Awards</span>
+        <h2 class="section-title">Competition Achievements</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <!-- Timeline Component -->
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot bg-gold">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <div class="timeline-card scroll-reveal">
+            <span class="award-year">2025</span>
+            <h3 class="award-title">International Abacus Olympiad</h3>
+            <div class="award-badge badge-gold">Gold Medal</div>
+            <p class="award-desc">Placed 1st globally in the rapid mental arithmetic category using speed-calculation techniques.</p>
+          </div>
+        </div>
+        
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot bg-silver">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="timeline-card scroll-reveal">
+            <span class="award-year">2025</span>
+            <h3 class="award-title">International Essay Writing Competition</h3>
+            <div class="award-badge badge-silver">Silver Medal</div>
+            <p class="award-desc">Awarded Silver Medal for an essay titled "Our Green Future: Technology & Climate Change Action."</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot bg-bronze">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="timeline-card scroll-reveal">
+            <span class="award-year">2024</span>
+            <h3 class="award-title">Young Scientist Award</h3>
+            <div class="award-badge badge-blue">Top 20 Finalist</div>
+            <p class="award-desc">Recognized for creating the 'Smart Irrigation System' prototype for sustainable agriculture water usage.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot bg-bronze">
+            <i class="fa-solid fa-microphone"></i>
+          </div>
+          <div class="timeline-card scroll-reveal">
+            <span class="award-year">2024</span>
+            <h3 class="award-title">International Student Speaker Competition</h3>
+            <div class="award-badge badge-bronze">Bronze Medal</div>
+            <p class="award-desc">Represented school, delivering a persuasive speech on the importance of learning programming early.</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="timeline-item">
+          <div class="timeline-dot bg-blue">
+            <i class="fa-solid fa-image"></i>
+          </div>
+          <div class="timeline-card scroll-reveal">
+            <span class="award-year">2023</span>
+            <h3 class="award-title">International Painting Olympics</h3>
+            <div class="award-badge badge-gray">Participation Certificate</div>
+            <p class="award-desc">Created a canvas painting depicting human-robot co-existence, gaining special mention in the catalog.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Showcase -->
+  <section id="projects" class="section-padding section-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Project Showcase</h2>
+        <div class="title-underline"></div>
+        
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="science">Science</button>
+          <button class="filter-btn" data-filter="coding">Coding</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+        </div>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="science">
+          <div class="project-img-wrapper">
+            <img src="assets/project_irrigation.png" alt="Smart Irrigation System Mockup" class="project-img">
+            <span class="project-category-tag">Science</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Smart Irrigation System</h3>
+            <p class="project-desc">An eco-friendly IoT system that measures soil moisture levels using custom sensors and controls water flow automatically to conserve water.</p>
+            <div class="project-highlights">
+              <span class="highlight-pill"><i class="fa-solid fa-seedling"></i> Soil Sensors</span>
+              <span class="highlight-pill"><i class="fa-solid fa-trophy text-gold"></i> School Innovation Award</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card" data-category="coding">
+          <div class="project-img-wrapper">
+            <img src="assets/project_scratch.png" alt="Scratch Game: Temple Adventure Mockup" class="project-img">
+            <span class="project-category-tag">Coding</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Scratch Game: Temple Adventure</h3>
+            <p class="project-desc">A complete 2D adventure game featuring five unique levels, moving platforms, a custom health system, score counters, and high-score saving features.</p>
+            <div class="project-highlights">
+              <span class="highlight-pill"><i class="fa-solid fa-gamepad"></i> Scratch 3.0</span>
+              <span class="highlight-pill"><i class="fa-solid fa-star"></i> Interactive Levels</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card" data-category="web">
+          <div class="project-img-wrapper">
+            <img src="assets/project_climate.png" alt="Climate Change Website Mockup" class="project-img">
+            <span class="project-category-tag">Web Design</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Climate Change Awareness</h3>
+            <p class="project-desc">A modern, responsive informational website detailing the core drivers of greenhouse gases, interactive graphs, and local actions to mitigate global warming.</p>
+            <div class="project-highlights">
+              <span class="highlight-pill"><i class="fa-solid fa-code"></i> HTML & CSS</span>
+              <span class="highlight-pill"><i class="fa-solid fa-globe"></i> SEO-Friendly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Gallery -->
+  <section id="certificates" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certificates & Awards</h2>
+        <div class="title-underline"></div>
+        <p class="section-description">Click on any certificate to view it in full detail inside the interactive lightbox gallery.</p>
+      </div>
+      
+      <div class="certificates-grid">
+        <!-- Cert 1 -->
+        <div class="cert-card" data-src="assets/certificate_abacus.png" data-title="International Abacus Olympiad - Gold Medal">
+          <div class="cert-img-wrapper">
+            <img src="assets/certificate_abacus.png" alt="Abacus Olympiad Certificate" class="cert-img">
+            <div class="cert-overlay">
+              <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+              <span class="cert-name">Abacus Gold Medal</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cert 2 -->
+        <div class="cert-card" data-src="assets/certificate_essay.png" data-title="International Essay Writing Competition - Silver Medal">
+          <div class="cert-img-wrapper">
+            <img src="assets/certificate_essay.png" alt="Essay Writing Certificate" class="cert-img">
+            <div class="cert-overlay">
+              <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+              <span class="cert-name">Essay Silver Medal</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cert 3 -->
+        <div class="cert-card" data-src="assets/certificate_science.png" data-title="Young Scientist Award Certificate - Top 20 Finalist">
+          <div class="cert-img-wrapper">
+            <img src="assets/certificate_science.png" alt="Young Scientist Award Certificate" class="cert-img">
+            <div class="cert-overlay">
+              <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+              <span class="cert-name">Young Scientist Certificate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-padding section-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Competencies</span>
+        <h2 class="section-title">My Skills Matrix</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- Academic Skills -->
+        <div class="skills-card">
+          <h3>Academic Skills</h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Mental Math</span>
+              <span class="skill-val">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="95%"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Logical Reasoning</span>
+              <span class="skill-val">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="90%"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Problem Solving</span>
+              <span class="skill-val">92%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="92%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Technical Skills -->
+        <div class="skills-card">
+          <h3>Technical Skills</h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Scratch Programming</span>
+              <span class="skill-val">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="95%"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML & CSS</span>
+              <span class="skill-val">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80%"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Canva & PowerPoint</span>
+              <span class="skill-val">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85%"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Soft Skills -->
+        <div class="skills-card">
+          <h3>Soft Skills</h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Leadership</span>
+              <span class="skill-val">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85%"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Teamwork</span>
+              <span class="skill-val">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="90%"></div>
+            </div>
+          </div>
+          
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Public Speaking & Creativity</span>
+              <span class="skill-val">88%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="88%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Blog Section -->
+  <section id="blog" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Insights</span>
+        <h2 class="section-title">Student Blog</h2>
+        <div class="title-underline"></div>
+        <p class="section-description">Read about my thoughts and lessons learned on coding, math, and presenting.</p>
+      </div>
+      
+      <div class="blog-grid">
+        <!-- Blog 1 -->
+        <div class="blog-card" data-blog-id="1">
+          <div class="blog-meta">
+            <span class="blog-date"><i class="fa-regular fa-calendar"></i> May 15, 2026</span>
+            <span class="blog-category">Academics & Abacus</span>
+          </div>
+          <h3 class="blog-title">How Abacus Improved My Mental Math Skills</h3>
+          <p class="blog-excerpt">Discover how learning abacus visualizations changed the way I interact with numbers, allowing me to calculate equations rapidly in my head...</p>
+          <button class="btn-read-blog">Read Post <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        
+        <!-- Blog 2 -->
+        <div class="blog-card" data-blog-id="2">
+          <div class="blog-meta">
+            <span class="blog-date"><i class="fa-regular fa-calendar"></i> April 2, 2026</span>
+            <span class="blog-category">Competitions</span>
+          </div>
+          <h3 class="blog-title">My Experience at the International Student Speaker Competition</h3>
+          <p class="blog-excerpt">Preparing a speech, battling stage fright, and speaking in front of hundreds of students from 12 countries. Here are my main lessons learned...</p>
+          <button class="btn-read-blog">Read Post <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        
+        <!-- Blog 3 -->
+        <div class="blog-card" data-blog-id="3">
+          <div class="blog-meta">
+            <span class="blog-date"><i class="fa-regular fa-calendar"></i> February 28, 2026</span>
+            <span class="blog-category">Technology & Coding</span>
+          </div>
+          <h3 class="blog-title">Why Coding is Important for Future Careers</h3>
+          <p class="blog-excerpt">No matter what job you want to do in the future, learning to code teaches you logical structure and problem solving that makes everything easier...</p>
+          <button class="btn-read-blog">Read Post <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding section-bg">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Feedback</span>
+        <h2 class="section-title">Testimonials</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <!-- Testimonials Slider -->
+      <div class="slider-container">
+        <div class="slider-wrapper" id="testimonials-slider">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-text">
+              "Aarav consistently demonstrates curiosity, discipline, and leadership in every activity. He is always willing to help classmates understand complex programming logic and science experiments, proving his capabilities as a team leader."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Mrs. Sunita Verma</span>
+              <span class="author-title">Grade 8 Class Teacher, Sunrise International School</span>
+            </div>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-text">
+              "The GEMMA Clubs have significantly improved Aarav's confidence and problem-solving abilities. Watching him design projects like the Smart Irrigation model and present them at national competitions has been an incredibly proud experience for us."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Mr. & Mrs. Sharma</span>
+              <span class="author-title">Parents of Aarav Sharma</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slider Navigation Controls -->
+        <div class="slider-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Reach Out</span>
+        <h2 class="section-title">Contact Aarav</h2>
+        <div class="title-underline"></div>
+      </div>
+      
+      <div class="contact-grid">
+        <!-- Contact Info Cards -->
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p>Please feel free to connect for collaborations on science projects, coding challenges, or speaking events.</p>
+          
+          <div class="info-card">
+            <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+            <div class="info-body">
+              <h4>Email</h4>
+              <p><a href="mailto:aarav.sharma@example.com">aarav.sharma@example.com</a></p>
+            </div>
+          </div>
+          
+          <div class="info-card">
+            <span class="info-icon"><i class="fa-solid fa-school"></i></span>
+            <div class="info-body">
+              <h4>School Address</h4>
+              <p>Sunrise International School, Block-C, Vasant Kunj, New Delhi, India</p>
+            </div>
+          </div>
+          
+          <div class="social-channels">
+            <h4>Follow My Journey</h4>
+            <div class="social-icons">
+              <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="social-link" aria-label="Scratch Channel"><i class="fa-solid fa-gamepad"></i></a>
+              <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h3>Send a Message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-email">Your Email</label>
+              <input type="email" id="form-email" placeholder="john@example.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" placeholder="Project Collaboration" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" rows="5" placeholder="Hi Aarav, I would love to talk about..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <div class="form-status" id="form-status"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-bottom">
+    <div class="container footer-content">
+      <p>&copy; 2026 Aarav Sharma. All rights reserved. Designed for GEMA Clubs.</p>
+      <div class="footer-links">
+        <a href="#home">Back to Top</a>
+        <span class="bullet">&bull;</span>
+        <a href="resume.html" target="_blank">Printable CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Overlay -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" id="lightbox-img" alt="Enlarged view">
+      <h4 id="lightbox-title">Certificate Name</h4>
+    </div>
+  </div>
+
+  <!-- Blog Post Modal Overlay -->
+  <div class="modal-overlay" id="blog-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="blog-modal-close" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-category" id="modal-blog-category">Academics</span>
+        <span class="modal-date" id="modal-blog-date">May 15, 2026</span>
+        <h2 class="modal-title" id="modal-blog-title">How Abacus Improved My Mental Math Skills</h2>
+      </div>
+      <div class="modal-body" id="modal-blog-body">
+        <!-- Content will be injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Simulated Video Introduction Modal -->
+  <div class="modal-overlay" id="video-modal">
+    <div class="modal-card video-card-modal">
+      <button class="modal-close" id="video-modal-close" aria-label="Close video">&times;</button>
+      <div class="video-container">
+        <!-- Simulated screen/avatar with audio visualizer representation -->
+        <div class="simulated-video">
+          <div class="video-header-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="video-timer" id="video-timer">00:00 / 01:05</span>
+          </div>
+          <div class="video-avatar-area">
+            <img src="assets/profile.png" alt="Aarav Sharma Portrait" class="video-avatar-img">
+            <div class="audio-waves" id="audio-waves">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="video-subtitles" id="video-subtitles">
+              Press play to watch Aarav's video intro.
+            </div>
+          </div>
+          <div class="video-controls">
+            <button class="video-btn" id="video-play-toggle"><i class="fa-solid fa-play"></i> Play</button>
+            <div class="video-progress-bar">
+              <div class="video-progress-fill" id="video-progress-fill"></div>
+            </div>
+            <button class="video-btn" id="video-mute-toggle"><i class="fa-solid fa-volume-high"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="index.js"></script>
+</body>
+</html>
